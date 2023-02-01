@@ -1,5 +1,8 @@
 #include <iostream>
 
+using namespace std;
+// standard commands
+
 /*primary library for input output processing*/
 
 int main() {
