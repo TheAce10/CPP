@@ -7,6 +7,8 @@ using namespace std;
 
 int main() {
     /*main area for code execution*/
-    
+
+    cout << "Hello World";
+    //print to console
     return 0; //return command
 }
