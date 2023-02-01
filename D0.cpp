@@ -14,5 +14,7 @@ int main() {
     /*Documentary*/
 
     // inline comments
+
+    // Thats all for today
     return 0; //return command
 }
