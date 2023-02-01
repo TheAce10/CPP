@@ -12,5 +12,7 @@ int main() {
     //print to console
 
     /*Documentary*/
+
+    // inline comments
     return 0; //return command
 }
