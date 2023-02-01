@@ -7,4 +7,6 @@ using namespace std;
 
 int main() {
     /*main area for code execution*/
+    
+    return 0; //return command
 }
