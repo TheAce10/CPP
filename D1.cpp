@@ -57,8 +57,15 @@ int main() {
      const int birthday = 101103;
     //  birthday = 10; // error: assignment of read-only variable 'myNum'
 
-    
+    //User Input
+    int xin;
+    cout << "Enter a number";
+    cin >> xin ;
 
+    //Exp
+    cout << xin ;
+
+    
 
 
     return 0;
