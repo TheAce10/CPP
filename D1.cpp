@@ -73,7 +73,10 @@ int main() {
     float --------- 4 bytes --- stores fractional numbers upto 7 d.p.
     double -------- 4 bytes --- stores fractional numbers upto 15 d.p.*/
 
-    
+    //A floating point number can also be a scientific number with an "e" to indicate the power of 10:
+    float ff = 35e3;
+    double dd = 12E4;
+    cout << ff <<'\n' << dd;
 
 
 
