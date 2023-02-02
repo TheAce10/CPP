@@ -65,7 +65,16 @@ int main() {
     //Exp
     cout << xin ;
 
+    /*Basic Data types
+    Data type      Size        Description
+    boolean ----- 1 byte ---- stores true or false
+    char --------- 1 byte --- stores a single character\letter\number or ASCII
+    int ---------- 2\4 bytes - stores whole numbers without decimal points
+    float --------- 4 bytes --- stores fractional numbers upto 7 d.p.
+    double -------- 4 bytes --- stores fractional numbers upto 15 d.p.*/
+
     
+
 
 
     return 0;
