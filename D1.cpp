@@ -26,6 +26,20 @@ int main() {
     string - stores text, such as "Hello World". String values are surrounded by double quotes
     bool - stores values with two states: true or false*/
 
+    int myNum = 5;               // Integer (whole number without decimals)
+    double myFloatNum = 5.99;    // Floating point number (with decimals)
+    char myLetter = 'D';         // Character
+    string myText = "Hello";     // String (text)
+    bool myBoolean = true;       // Boolean (true or false)
+
+    //Display Variables
+    int myAge = 25;
+    cout << "I am " << myAge << " years old.";
+
+    //Declare Many Variables
+    int x = 5, y = 6, z = 50;
+    cout << x + y + z;
+
     
 
 
