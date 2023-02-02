@@ -48,6 +48,15 @@ int main() {
     Names cannot contain whitespaces or special characters like !, #, %, etc.
     Reserved words (like C++ keywords, such as int) cannot be used as names*/
     
+    /*Constants
+    When you do not want others (or yourself) to override 
+    existing variable values, use the const keyword 
+    (this will declare the variable as "constant", which means
+     unchangeable and read-only):*/
+
+     const int birthday = 101103;
+    //  birthday = 10; // error: assignment of read-only variable 'myNum'
+
     
 
 
