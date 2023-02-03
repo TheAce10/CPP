@@ -49,5 +49,12 @@ int main() {
     ++	Increment	    Increases the value of a variable by 1	++x	
     --	Decrement	    Decreases the value of a variable by 1	--x   */
 
-
+    /*
+    Assignment Operators
+    Assignment operators are used to assign values to variables.
+    In the example below, we use the assignment operator (=) to assign the value 10 to a variable called x
+    */
+   int nn = 10;
+return 0;
+   
 }
