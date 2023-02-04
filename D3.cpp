@@ -329,6 +329,7 @@ for (int i = 0; i < 10; i++) {
     break;
   }
   cout << i << "\n";
+}
 /*C++ Continue
 The continue statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.
 This example skips the value of 4:
@@ -361,6 +362,55 @@ while (i2 < 10) {
   i2++;
 }
 
+    return 0;
+}
 
+int main() {
+/*
+C++ Arrays
+Arrays are used to store multiple values in a single variable, 
+instead of declaring separate variables for each value.
+To declare an array, define the variable type, specify the name 
+of the array followed by square brackets and specify the number 
+of elements it should store:
+*/
+string cars[4];
+string cars[4] = {"Volvo", "BMW", "Ford", "Mazda"};
+int myNum[3] = {10, 20, 30};
+cout << cars[0];
+// To change the value of a specific element, refer to the index number:
+cars[0] = "Opel";
+
+// You can loop through the array elements with the for loop.
+// The following example outputs all elements in the cars array:
+
+// Example
+for (int i = 0; i < 4; i++) {
+  cout << cars[i] << "\n";
+}
+
+/*Omit Array Size
+You don't have to specify the size of the array. But if you don't, it will only be as big as the elements that are inserted into it:
+*/
+string cars[] = {"Volvo", "BMW", "Ford"}; // size of array is always 3
+// This is completely fine. However, the problem arise if you want extra space for future elements. Then you have to overwrite the existing values:
+
+string cars[] = {"Volvo", "BMW", "Ford"};
+string cars[] = {"Volvo", "BMW", "Ford", "Mazda", "Tesla"};
+// If you specify the size however, the array will reserve the extra space:
+
+string car[5] = {"Volvo", "BMW", "Ford"}; // size of array is 5, even though it's only three elements inside it
+// Now you can add a fourth and fifth element without overwriting the others:
+
+// Example
+car[3] = "Mazda";
+car[4] = "Tesla";
+
+// It is also possible to declare an array without specifying the elements on declaration, and add them later:
+
+// Example
+string can[5];
+can[0] = "Fish";
+can[1] = "Drink";
     return 0;
 }
