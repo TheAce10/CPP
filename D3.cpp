@@ -257,6 +257,44 @@ The default Keyword
 The default keyword specifies some code to run if there is no 
 case match:*/
 
+    return 0;
+}
 
+int main() {
+/*LOOPS
+C++ Loops
+Loops can execute a block of code as long as a specified 
+condition is reached.
+Loops are handy because they save time, reduce errors, and 
+they make code more readable.
+*/
+
+/*
+C++ While Loop
+The while loop loops through a block of code as long as a specified condition is true:
+
+Syntax
+while (condition) {
+  // code block to be executed
+}*/
+int x= 0;
+while (x < 10) {
+    cout << "this is a while loop";
+    x++;
+}
+// Note: Do not forget to increase the variable used in the condition, otherwise the loop will never end!
+/*The Do/While Loop
+The do/while loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.
+
+Syntax
+do {
+  // code block to be executed
+}
+while (condition);*/
+int i=0;
+do {
+    cout << i;
+    i++;
+} while(i<6);
     return 0;
 }
