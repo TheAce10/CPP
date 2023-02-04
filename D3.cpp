@@ -134,6 +134,30 @@ int main() {
     round(2.6);
     log(2);
 
+    /*A boolean variable is declared with the bool keyword and 
+    can only take the values true or false:*/
+
+    // Example
+    bool isCodingFun = true;
+    bool isFishTasty = false;
+    cout << isCodingFun;  // Outputs 1 (true)
+    cout << isFishTasty;  // Outputs 0 (false)
+    /*From the example above, you can read that a true value 
+    returns 1, and false returns 0.
+    However, it is more common to return boolean values from 
+    boolean expressions
+
+    A Boolean expression is a C++ expression that returns a 
+    boolean value: 1 (true) or 0 (false).
+    You can use a comparison operator, such as the greater than
+    (>) operator to find out if an expression (or a variable) 
+    is true:*/
+
+    cout << (10>9); //returns true
+    cout << (10<9); //returns false
+    cout << (10==10);
+    cout << (9!= 10);
+    
 
 
 }
