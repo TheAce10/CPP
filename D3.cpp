@@ -113,7 +113,27 @@ int main(){
     std:: string namespace1 = "";
     std::cout << namespace1;
 
-
-
 return 0;
+}
+
+#include <cmath>
+
+int main() {
+    /*C++ Math
+    C++ has many functions that allows you to perform 
+    mathematical tasks on numbers.*/
+    // MAX/MIN
+    cout << max(10, 51) << endl;
+    cout << min(14, 55); //takes only two args
+
+    /*Other functions, such as sqrt (square root), 
+    round (rounds a number) and log (natural logarithm), 
+    can be found in the <cmath> header file:*/
+    // #include <cmath>
+    sqrt(64);
+    round(2.6);
+    log(2);
+
+
+
 }
