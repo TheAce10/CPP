@@ -157,7 +157,49 @@ int main() {
     cout << (10<9); //returns false
     cout << (10==10);
     cout << (9!= 10);
-    
 
+return 0 ; 
+}
 
+int main() {
+    //C++ Conditions
+    /*Use if to specify a block of code to be executed, if a specified condition is true
+    Use else to specify a block of code to be executed, if the same condition is false
+    Use else if to specify a new condition to test, if the first condition is false
+    Use switch to specify many alternative blocks of code to be executed*/
+
+    // IF statement
+    /*if (condition) {
+    block of code to be executed if the condition is true
+        } else {
+    block of code to be executed if the condition is false
+        } */
+if (20 > 18) {
+  cout << "20 is greater than 18";
+} else
+{
+    cout << "20 is lesser than 18";
+}
+
+//Else if
+int x= 10, y= 15;
+if (x==y){
+    cout << "equal";
+} else if (x > y) {
+    cout<< "greater";
+} 
+else {
+    cout << "lesser";
+}
+
+/*Short Hand If...Else (Ternary Operator)
+There is also a short-hand if else, which is known as 
+the ternary operator because it consists of three operands. 
+It can be used to replace multiple lines of code with a single 
+line. It is often used to replace simple if else statements:*/
+
+// variable = (condition) ? expressionTrue : expressionFalse;
+string var1= (x > y) ? "greater" : "lesser";
+
+return 0;
 }
