@@ -296,5 +296,23 @@ do {
     cout << i;
     i++;
 } while(i<6);
+
+/*For Loop
+C++ For Loop
+When you know exactly how many times you want to loop through a block of code, use the for loop instead of a while loop:
+
+Syntax
+for (statement 1; statement 2; statement 3) {
+  // code block to be executed
+}
+Statement 1 is executed (one time) before the execution of the code block.
+
+Statement 2 defines the condition for executing the code block.
+
+Statement 3 is executed (every time) after the code block has been executed.*/
+
+for (int c= 0;c<10;c++){
+    cout<< c;
+}
     return 0;
 }
