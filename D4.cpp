@@ -116,3 +116,5 @@ cout << "Victory!\n";
 cout << "You won in " << numberOfTurns << " turns";
     return 0;
 }
+
+/********REVISION OF FUNDAENTALS DONE HURRAY ********/
