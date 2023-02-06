@@ -35,3 +35,16 @@ int main() {
     }
     return 0;
 }
+
+int main() {
+    string acd= "bread";
+    string &newdata= acd;
+    /*Creating References
+    A reference variable is a "reference" to an existing variable, and it is created with the & operator:
+    */
+    string food = "Pizza";  // food variable
+    string &meal = food;    // reference to food
+    cout << food << "\n";  // Outputs Pizza
+    cout << meal << "\n";  // Outputs Pizza
+    return 0;
+}
