@@ -147,5 +147,6 @@ cout << *ptr << "\n";
 
 // Output the new value of the food variable (Hamburger)
 cout << food << "\n";
+/*end of day*/
     return 0;
 }   
