@@ -148,5 +148,8 @@ cout << *ptr << "\n";
 // Output the new value of the food variable (Hamburger)
 cout << food << "\n";
 /*end of day*/
+/*lastcommit*/
+int apoin= 123;
+int* ppp= &apoin;
     return 0;
 }   
