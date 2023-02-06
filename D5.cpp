@@ -7,7 +7,7 @@ int main() {
     float height,weight,BMI;
     cout << "BMI cALCULATION\n" << "Enter your height(cm)\t";
     cin >> height ;
-    cout << "Enter your weight(kg)\n";
+    cout << "Enter your weight(kg)\t";
     cin >>weight;
     cout << "Height:\t"<<height<<"\nWeight:\t"<<weight;
 
@@ -16,7 +16,7 @@ int main() {
 
     // BMI
     BMI= weight/(height*height);
-    cout << "Calcuated BMI:\t"<< BMI;
+    cout << "\nCalcuated BMI:\t"<< BMI;
     // Check for BMI Feedback
     if (BMI<18.5){
         cout << "\n You are underweight";
