@@ -47,12 +47,26 @@ void numerical() {
     int n[2][2];
     cout << "Enter matrix A\t";
     cout << "Row1 Col1\n";
-    cin >> n[1][1];
+    cin >> n[0][0];
     cout << "Row1 Col2\n";
-    cin >> n[1][2];
+    cin >> n[0][1];
     cout << "Row2 Col1\n";
-    cin >> n[2][1];
+    cin >> n[1][0];
     cout << "Row2 Col2\n";
-    cin >> n[2][2];
-    cout << "Matrix A \n" <<  n ;
+    cin >> n[1][1];
+    cout << "Matrix A \n";
+
+    for(int i=0;i<2;i++){
+        switch(i){
+            case 0:
+            cout<< n[i][0]<<"\t";
+            cout<< n[i][1]<<"\n";
+            break;
+            case 1:
+            cout<< n[i][0]<<"\t";
+            cout<< n[i][1]<<"\n";
+            break;
+        }
+    }
 }
+
