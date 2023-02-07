@@ -68,6 +68,46 @@ int main() {
 // Liam Refsnes
 // Jenny Refsnes
 // Anja Refsnes*/
+/*Note: The following example has a function that takes a string called fname as parameter. When the function is called, we pass along a first name, which is used inside the function to print the full name:
+
+Example
+void myFunction(string fname) {
+  cout << fname << " Refsnes\n";
+}
+
+int main() {
+  myFunction("Liam");
+  myFunction("Jenny");
+  myFunction("Anja");
+  return 0;
+}
+
+// Liam Refsnes
+// Jenny Refsnes
+// Anja Refsnes*/
+
+/*Default Parameter Value
+You can also use a default parameter value, by using the equals sign (=).
+
+If we call the function without an argument, it uses the default value ("Norway"):
+
+Example
+void myFunction(string country = "Norway") {
+  cout << country << "\n";
+}
+
+int main() {
+  myFunction("Sweden");
+  myFunction("India");
+  myFunction();
+  myFunction("USA");
+  return 0;
+}
+
+// Sweden
+// India
+// Norway
+// USA*/
     return 0;
 }
 // definition
