@@ -15,7 +15,7 @@ int main() {
     int a;
     cout <<"Sum of Natural numbers to the nth term\n" << "Enter a nth term for your sum: \t" ;
     cin >> a;
-    cout << "Sum of natural numbers up to"<<a << ":"<<sum_natural(a);
+    cout << "Sum of natural numbers up to "<<a << " : "<<sum_natural(a);
     return 0;
 }
 

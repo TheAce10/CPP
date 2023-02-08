@@ -1,22 +1,31 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
 int main () {
-int aa,seq=0,j=0;
+int a,temp,seq=0,j=0;
 cout << "Fibonacci sequence\n Enter length for sequence\t";
-cin >>aa;
-for(int i=0;i<=aa;i++){
+cin >>a;
+for(int i=0;i<a;i++){
     if (i=0){
         seq= 0;
+        break;
     }
     else if (i=1){
         seq= 1;
+        break;
     }
     else if (i>1){
-    seq+=seq;
-    }
-    else {
-    cout<< "You entered a negative number";
-    break;
-    };
-    }
-    cout << "Fibonacci sequence to 5 is " << seq;
+    temp= seq;
+    seq+=temp;
+    continue;
+    }}
+//     else {
+//     cout<< "You entered a negative number";
+//     break;
+//     };
+// }
+    cout << "Fibonacci sequence to "<<a<<" is " << seq;
 return 0;
 }
