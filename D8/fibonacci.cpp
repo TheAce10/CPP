@@ -16,16 +16,17 @@ for(int i=0;i<a;i++){
         seq= 1;
         continue;
     }
-    else if (i>1){
+    else if (i > 1){
     temp= seq;
-    seq+=temp;
+    seq=seq + temp;
     continue;
-    }}
-//     else {
-//     cout<< "You entered a negative number";
-//     break;
-//     };
-// }
+    }
+    else {
+    cout<< "You entered a negative number"<<endl;
+    
+   };
+   break;
+}
     cout << "Fibonacci sequence to "<<a<<" is " << seq;
 return 0;
 }
