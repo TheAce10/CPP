@@ -1,7 +1,8 @@
 #include <iostream>
 #include <string>
 
-Question 1
+using namespace std;
+// Question 1
 long int sum_natural(int n){
     int sum1= 0;
     for (int i=1; i < n; i++){
