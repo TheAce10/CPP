@@ -1,8 +1,4 @@
 int main () {
-    // float a;
-    // cout << "Enter height(cm)\t";
-    // cin >> a;
-    // convert(a);
 int aa,seq=0,j=0;
 cout << "Fibonacci sequence\n Enter length for sequence\t";
 cin >>aa;
