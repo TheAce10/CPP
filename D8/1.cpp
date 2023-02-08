@@ -10,11 +10,11 @@ cin >>a;
 for(int i=0;i<a;i++){
     if (i=0){
         seq= 0;
-        break;
+        continue;
     }
     else if (i=1){
         seq= 1;
-        break;
+        continue;
     }
     else if (i>1){
     temp= seq;
