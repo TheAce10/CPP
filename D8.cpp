@@ -33,7 +33,7 @@ int main () {
     // convert(a);
 int aa,seq=0,j=0;
 cout << "Fibonacci sequence\n Enter length for sequence\t";
-    cin >>aa;
+cin >>aa;
 for(int i=0;i<=aa;i++){
     if (i=0){
         seq= 0;
@@ -45,9 +45,10 @@ for(int i=0;i<=aa;i++){
     seq+=seq;
     }
     else {
-cout<< "You entered a negative number";
+    cout<< "You entered a negative number";
+    break;
     };
     }
-cout << "Fibonacci sequence to 5 is " << seq;
+    cout << "Fibonacci sequence to 5 is " << seq;
 return 0;
 }
