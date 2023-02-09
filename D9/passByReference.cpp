@@ -26,3 +26,6 @@ int main() {
 
     return 0;
 }
+
+/*Pass By Reference
+In the examples from the previous page, we used normal variables when we passed parameters to a function. You can also pass a reference to the function. This can be useful when you need to change the value of the arguments*/
