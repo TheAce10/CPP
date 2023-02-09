@@ -2,9 +2,9 @@
 
 using namespace std;
 
-void myFunction(int myNumbers[5]) {
+void myFunction(int Num[7]) {
   for (int i = 0; i < 5; i++) {
-    cout << myNumbers[i] << "\n";
+    cout << Num[i] << "\n";
   }
 }
 
