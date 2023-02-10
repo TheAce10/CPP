@@ -20,3 +20,6 @@ int main() {
   cout << "Double: " << myNum2;
     return 0;
 }
+
+/*Function Overloading
+With function overloading, multiple functions can have the same name with different parameters:*/
