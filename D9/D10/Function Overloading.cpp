@@ -12,6 +12,9 @@ int plusFuncInt(int x, int y) {
 double plusFuncDouble(double x, double y) {
   return x + y;
 }
+double plusFunc(double x, double y) {
+  return x + y;
+}
 
 int main() {
     int myNum1 = plusFuncInt(8, 5);
