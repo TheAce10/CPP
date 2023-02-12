@@ -4,24 +4,35 @@
 using namespace std;
 
 int main() {
-    int a,b,c,d;
-    for(int i=0;i<3;i++){
-    if(i=0 ){
-    cin >>a;
-    cout <<a;}
-    // continue;}
+    int a,b,c,d,i=0;
+    cout << "Time\n";
 
-    // else if (i=1)
-    // {
-    // cin >>b;
-    // cout <<a<<":"<<b<< ":";
-    // continue;
-    // }
-    // else {
-    // cin >>c;
-    // }
-    
+    while(i<4){
+        // if(i=0){
+        switch (i)
+        {
+        case 1:
+            /* code */
+            i++;
+            cin >>a;
+            cout <<a;
+            
+            break;
+        case 2:
+            i++;
+            cin >>b;
+            cout <<a<<":"<<b<< ":";
+            
+        case 3:
+            i++;
+            cin >> c;
+            cout <<a<<":"<<b<< ":"<<c;
+            
+            break;
+        default:
+            break;
+        }
+        continue; 
     }
-    // cout << a<<":"<<b<<":"<<c;
     return 0;
 }
