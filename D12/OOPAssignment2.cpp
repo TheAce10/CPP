@@ -2,53 +2,35 @@
 #include <string>
 
 using namespace std;
-
-int hms_to_secs(){
+void hms_to_secs(){
     int i=1,hrs,min,sec;
     while(i<4){
-        // if(i=0){
         switch (i)
-        {
-        case 1:
-            /* code */
+        {case 1:
             i++;
-            cin >>hrs;
-            cout <<hrs<<":";
-            
+            cout << "Enter time o convert\n Format (hour:min:sec)\n" <<"Hours\n";
+            cin >>hrs;cout << "\nMinutes\n";
+            cout <<hrs<<"h:";
             break;
         case 2:
             i++;
-            cin >>min;
-            cout <<hrs<<":"<<min<< ":";
-            
+            cin >>min;cout << "\nSeconds\n";
+            cout <<hrs<<"h:"<<min<< "m:";
         case 3:
             i++;
             cin >> sec;
-            cout <<hrs<<":"<<min<< ":"<<sec;
-            
             break;
         default:
-            break;
-        }
-        continue; 
-    }
-    return (hrs * 3600)+(min * 60) + sec;
+            break;}
+        continue; }
+    cout <<"\n"<<hrs<<"h:"<<min<< "m:"<<sec<<"s"<<" is equal to : "<<(hrs * 3600)+(min * 60) + sec <<"sec(s)\n\n";
 }
-
 int main() {
     int ask,ans;
-    do {
-    cout << "Convert time to seconds\n"<< "How can i help you today\n"<<"Press 1 to continue press 2 to exit\n  ";
+    do {cout << "Convert time to seconds\n"<< "How can i help you today\n"<<"Enter 1 to continue, enter 2 to exit\n  ";
     cin >> ask;
-    if(ask=1){
-        ans=hms_to_secs();
-    }
-    }
-    while (ask = 1);
-
-     
-    
-
-    
+    if(ask==1){
+        hms_to_secs(); }}
+    while (ask == 1);
     return 0;
 }
