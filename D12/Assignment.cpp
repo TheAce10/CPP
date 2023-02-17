@@ -1,22 +1,22 @@
 #include <iostream>
 using namespace std;
 
-long hms_to_secs(int hours, int minutes, int seconds) {
-    long total_seconds = hours * 3600 + minutes * 60 + seconds;
+long hms_to_secs(int hrs, int min, int sec) {
+    long total_seconds = hrs * 3600 + min * 60 + sec;
     return total_seconds;
 }
 
 int main() {
     int hours, minutes, seconds;
-    char colon;
+    char a;
     while (true) {
-        cout << "Enter a time value in format HH:MM:SS (or enter -1 to exit): ";
-        cin >> hours >> colon >> minutes >> colon >> seconds;
-        if (hours == -1) {
+        cout << "Enter a time value in format HH:MM:SS (or enter 2 to exit): ";
+        cin >> hours >> a >> minutes >> a >> seconds;
+        if (hours == 2) {
             break;
         }
         long total_seconds = hms_to_secs(hours, minutes, seconds);
-        cout << "The equivalent time in seconds is: " << total_seconds << endl;
+        cout <<""<< "is equivalent to : " << total_seconds << "sec(s)"<<endl;
     }
     return 0;
 }
