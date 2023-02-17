@@ -16,7 +16,7 @@ int main() {
             break;
         }
         long total_seconds = hms_to_secs(hours, minutes, seconds);
-        cout <<"\n"<<hrs<<"h:"<<min<< "m:"<<sec<<"s"<<"<<"h"<< "is equivalent to : " << total_seconds << "sec(s)"<<endl;
+        cout <<"\n"<<hours<<"h:"<<minutes<< "m:"<<seconds<<"s "<< "is equivalent to : " << total_seconds << "sec(s)"<<endl;
     }
     return 0;
 }
