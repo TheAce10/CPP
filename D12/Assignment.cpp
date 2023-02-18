@@ -11,7 +11,7 @@ int main() {
     char a;
     while (true) {
         cout << "Enter a time value(format HH:MM:SS) or enter 2 to exit: ";
-        cin >> hours >> a >> minutes >> a >> seconds;
+        cin >> hours >> minutes >> seconds;
         if (hours == 2) {
             break;
         }
