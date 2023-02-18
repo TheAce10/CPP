@@ -10,13 +10,14 @@ int main() {
     int hours, minutes, seconds;
     char a;
     while (true) {
-        cout << "Enter a time value(format HH:MM:SS)\n";// or enter 2 to exit: ";
+        cout << "Enter a time value(format HH:MM:SS)\n";
         cin >> hours >> a >> minutes >> a >> seconds;
-        if (hours == 2) {
+        cout << hours << a << minutes << a << seconds;
+        if (!isdigit(hours)) {
             break;
         }
         long total_seconds = hms_to_secs(hours, minutes, seconds);
-        cout <<"\n"<<hours<<"h:"<<minutes<< "m:"<<seconds<<"s "<< "is equivalent to : " << total_seconds << "sec(s)"<<endl;
+        cout <<"\n"<<hours<<"h:"<<minutes<< "m:"<<seconds<<"s "<< "is equivalent to : " << total_seconds << "sec(s)\n"<<endl;
     }
     return 0;
 }
