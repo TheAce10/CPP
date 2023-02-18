@@ -10,8 +10,8 @@ int main() {
     int hours, minutes, seconds;
     char a;
     while (true) {
-        cout << "Enter a time value(format HH:MM:SS) or enter 2 to exit: ";
-        cin >> hours >> minutes >> seconds;
+        cout << "Enter a time value(format HH:MM:SS)\n";// or enter 2 to exit: ";
+        cin >> hours >> a >> minutes >> a >> seconds;
         if (hours == 2) {
             break;
         }
