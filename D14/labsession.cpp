@@ -18,7 +18,8 @@ using namespace std;
 
 int main() {
 
-    quadrilateral square,rectangle;
+    quadrilateral square,rectangle; //instance of quadrilateral class
+    // displaying the area of both square and rectangle
     square.set_values(10,10);
     cout <<"The area of the square is "<< square.area() <<endl;
     rectangle.set_values(5, 10);
