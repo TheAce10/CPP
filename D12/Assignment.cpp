@@ -18,4 +18,4 @@ int main() {
         << "sec(s)\n"<<endl;
     }
     return 0;
-}
+}  
