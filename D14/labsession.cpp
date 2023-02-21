@@ -8,13 +8,16 @@ using namespace std;
         /* data */
         int x, y;
     public:
-    void set_values(int a, int b){
-        x= a; y= b;
-     }
-     int area(){
+    
+    void set_values(int a, int b);
+    int area(){
         return x*y;
      }
     };
+
+    void quadrilateral::set_values(int a,int b){
+        x = a; y= b;
+    }
 
 int main() {
 
