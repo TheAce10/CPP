@@ -8,9 +8,8 @@ using namespace std;
         /* data */
         int x, y;
     public:
-     void set_values(int a, int b){
-        x= a;
-        y= b;
+    void set_values(int a, int b){
+        x= a; y= b;
      }
      int area(){
         return x*y;
@@ -25,5 +24,5 @@ int main() {
     rectangle.set_values(5, 10);
     cout <<"The area of the square is "<< rectangle.area() <<endl;
     
-    
+    return 0;
 }
