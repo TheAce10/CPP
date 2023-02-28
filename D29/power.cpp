@@ -7,7 +7,7 @@ float subtract(float a,float b){
 }
 
 void operate(float a, float b, float (*func)(float,float)){
-    cout <<"we";
+    
 }
 
 int main(){
