@@ -1,4 +1,5 @@
 #include <iostream>
+#include <conio.h>
 using namespace std;
 
 float subtract(float a,float b){
@@ -11,5 +12,12 @@ void operate(float a, float b, float (*func)(float,float)){
 
 int main(){
     float (*pointt)(float,float)= subtract;
+    char keyOnPress; int ASCIIequiv;
+    for(i )
+    keyOnPress= getchar();
+    ASCIIequiv= keyOnPress;
+    cout<<"You pressed"<<keyOnPress<<" which is "<<ASCIIequiv<< "in ASCII";
+
+
     return 0;
 }
