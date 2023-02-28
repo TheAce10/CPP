@@ -13,10 +13,11 @@ void operate(float a, float b, float (*func)(float,float)){
 int main(){
     float (*pointt)(float,float)= subtract;
     char keyOnPress; int ASCIIequiv;
-    while(true)
+    while(true){
     keyOnPress= getchar();
     ASCIIequiv= keyOnPress;
     cout<<"You pressed"<<keyOnPress<<" which is "<<ASCIIequiv<< "in ASCII";
+    }
 
 
     return 0;
