@@ -5,11 +5,11 @@ float subtract(float a,float b){
     return a-b;
 }
 
-void operator(float a, float b, float (*func)(float,float)){
+void operate(float a, float b, float (*func)(float,float)){
     cout <<"we";
 }
 
 int main(){
-    float (*pointt)(float,float)= subtract
+    float (*pointt)(float,float)= subtract;
     return 0;
 }
