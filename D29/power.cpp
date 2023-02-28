@@ -14,9 +14,9 @@ int main(){
     float (*pointt)(float,float)= subtract;
     char keyOnPress; int ASCIIequiv;
     while(true){
-    keyOnPress= getchar();
+    keyOnPress= getch();
     ASCIIequiv= keyOnPress;
-    cout<<"You pressed"<<keyOnPress<<" which is "<<ASCIIequiv<< "in ASCII";
+    cout<<"You pressed \""<<keyOnPress<<"\" which is "<<ASCIIequiv<< "in ASCII"<<endl;
     }
 
 
