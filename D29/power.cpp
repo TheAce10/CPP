@@ -2,9 +2,7 @@
 #include <conio.h>
 using namespace std;
 
-float subtract(float a,float b){
-    return a-b;
-}
+
 
 void operate(float a, float b, float (*func)(float,float)){
     
