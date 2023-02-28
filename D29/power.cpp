@@ -2,10 +2,12 @@
 #include <conio.h>
 using namespace std;
 
-
+float subtract(float a,float b){
+    return a-b;
+}
 
 void operate(float a, float b, float (*func)(float,float)){
-    
+    cout <<"we";
 }
 
 int main(){
@@ -14,9 +16,9 @@ int main(){
     while(true){
     keyOnPress= getch();
     ASCIIequiv= keyOnPress;
-    cout<<"You pressed \""<<keyOnPress<<"\" which is "<<ASCIIequiv<< "in ASCII"<<endl;
+    cout<<"You pressed \""<<keyOnPress<<"\" which is "<<ASCIIequiv<< " in ASCII"<<endl;
     }
 
 
     return 0;
-}
+}//The end
