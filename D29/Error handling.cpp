@@ -15,5 +15,11 @@ The catch statement allows you to define a block of code to be executed, if an e
 The try and catch keywords come in pairs:
 
 Example*/
-
+try {
+  // Block of code to try
+  throw exception; // Throw an exception when a problem arise
+}
+catch () {
+  // Block of code to handle errors
+}
 }
