@@ -12,6 +12,6 @@ int main(){
 
 void zeroSmaller(int a, int b){
     (a>b)?a=0:b=0;
-    char w= (a=0)?'a':'b'
+    char w= (a=0)?'a':'b';
     cout<< "min =" << w;
 }
