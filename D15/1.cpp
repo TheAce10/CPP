@@ -17,12 +17,13 @@ public:
     void outside();
 };
 void classs::outside(){
-    c
+    cout << "outside"
 }
 
 
 int main() {
     cout << "Back at it";
 
+    
     return 0;
 }
