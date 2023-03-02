@@ -28,13 +28,15 @@ public:
     }
 };
 void classs::outside(){
-    cout << "outside"
+    cout << "outside";
 }
 
 
 int main() {
-    cout << "Back at it";
-
+    cout << "Back at it\n";
+    classs player;
+    player.playName();
+    player.set1(18,1);
 
     return 0;
 }
