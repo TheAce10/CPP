@@ -13,10 +13,19 @@ public:
     classs(/* args */) {}
     ~classs() {}
     //inside declared funct
+
     void inside(){
         cout <<"inside";
     }
     void outside();
+
+    void playName(){
+        cin >> name;
+    }
+    void set1(int a,int b){
+        age= a;
+        level= b;
+    }
 };
 void classs::outside(){
     cout << "outside"
