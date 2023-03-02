@@ -3,13 +3,13 @@
 using namespace std;
 
 //Classes
-class 
+class classs
 {
 private:
     /* data */
 public:
-    (/* args */) {}
-    ~() {}
+    classs(/* args */) {}
+    ~classs() {}
 };
 
 
