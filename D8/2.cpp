@@ -4,12 +4,17 @@
 using namespace std;
 // Question 1
 long int sum_natural(int n){
+    if (n=0) {
+        return 0;}
+    return n + sum_natural(n-1) ;
+}
+long int bless_Sequence(int n){
     int sum1= 0;
     for (int i=1; i < n; i++){
         sum1+= sum1++; //sum1+= i
     }
     return sum1;
-}
+    }
 
 int main() {
     int a;
