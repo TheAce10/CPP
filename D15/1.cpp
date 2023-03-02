@@ -7,6 +7,8 @@ class classs
 {
 private:
     /* data */
+    int age,level;
+    string name;
 public:
     classs(/* args */) {}
     ~classs() {}
@@ -24,6 +26,6 @@ void classs::outside(){
 int main() {
     cout << "Back at it";
 
-    
+
     return 0;
 }
