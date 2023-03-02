@@ -10,6 +10,10 @@ private:
 public:
     classs(/* args */) {}
     ~classs() {}
+    //inside declared funct
+    void printt(){
+        cout <<"inline"
+    }
 };
 
 
