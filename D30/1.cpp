@@ -6,12 +6,15 @@ struct {             // Structure declaration
 } myStructure;       // Structure variable
 
 int main(){
-  string food = "Pizza";
+string food = "Pizza";
 string &meal = food;
 
 cout << food << "\n";  // Outputs Pizza
 cout << meal << "\n";  // Outputs Pizza
 cout << &food << "\n";
 cout << &meal << "\n";
+
+meal= "tofu";
+cout << food << "\n";  // Outputs 
 return 0;
 }
