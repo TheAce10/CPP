@@ -11,10 +11,14 @@ public:
     classs(/* args */) {}
     ~classs() {}
     //inside declared funct
-    void printt(){
-        cout <<"inline"
+    void inside(){
+        cout <<"inside";
     }
+    void outside();
 };
+void classs::outside(){
+    c
+}
 
 
 int main() {
