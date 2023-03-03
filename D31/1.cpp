@@ -7,4 +7,4 @@ ofstream new1("new.txt");
 new1 << "i did it"; 
 new1.close();
 return 0;
-}
+}/*End*/
