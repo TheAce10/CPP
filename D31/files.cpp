@@ -12,5 +12,8 @@ int main(){
         cout << text.length();
         cout << "\n";
     }
+    prog1.close();
+
+    /*write a c++ program file*/
     
 }
