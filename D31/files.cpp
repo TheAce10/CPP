@@ -15,5 +15,10 @@ int main(){
     prog1.close();
 
     /*write a c++ program file*/
-    
+    ofstream cplus("1.cpp");
+    cplus << "#include <iostream>\n#include <fstream>\nusing namespace std;\n\nint main() {"
+    <<"\nofstream new1(\"new.txt\");\nnew1 << \"i did it\"; \nnew1.close();\nreturn 0;\n}";
+    cplus.close();
+    /*a program that creates another program*/
+    return 0;
 }
