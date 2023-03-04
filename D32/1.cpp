@@ -37,6 +37,8 @@ It is considered good practice, and it can clean up unnecessary memory space.*/
   // Create a text string, which is used to output the text file
 string myText;
 
-/
+// Read from the text file
+ifstream MyRead("filename.txt");
+
     return 0;
 }
