@@ -17,6 +17,9 @@ fstream	    A combination of ofstream and ifstream: creates, reads, and writes t
     // Create and open a text file
   ofstream MyFile("filename.txt");
 
-  
+  // Write to the file
+  MyFile << "Files can be tricky, but it is fun enough!";
+
+
     return 0;
 }
