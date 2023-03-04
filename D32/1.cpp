@@ -20,6 +20,7 @@ fstream	    A combination of ofstream and ifstream: creates, reads, and writes t
   // Write to the file
   MyFile << "Files can be tricky, but it is fun enough!";
 
-
+  // Close the file
+  MyFile.close();
     return 0;
 }
