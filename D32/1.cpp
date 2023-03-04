@@ -40,5 +40,11 @@ string myText;
 // Read from the text file
 ifstream MyRead("filename.txt");
 
+// Use a while loop together with the getline() function to read the file line by line
+while (getline (MyRead, myText)) {
+  // Output the text from the file
+  cout << myText;
+}
+
     return 0;
 }
