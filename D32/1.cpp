@@ -46,5 +46,7 @@ while (getline (MyRead, myText)) {
   cout << myText;
 }
 
+// Close the file
+MyRead.close();
     return 0;
 }
