@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include <string>
 /*C++ Files
 The fstream library allows us to work with files.
 To use the fstream library, include both the standard <iostream> AND the <fstream> header file:*/
@@ -14,13 +15,28 @@ Class	Description
 ofstream	Creates and writes to files
 ifstream	Reads from files
 fstream	    A combination of ofstream and ifstream: creates, reads, and writes to files */
-    // Create and open a text file
-  ofstream MyFile("filename.txt");
+  // Create and open a text file
+ofstream MyFile("filename.txt");
 
   // Write to the file
-  MyFile << "Files can be tricky, but it is fun enough!";
+MyFile << "Files can be tricky, but it is fun enough!";
 
   // Close the file
-  MyFile.close();
+MyFile.close();
+  /*Why do we close the file?
+It is considered good practice, and it can clean up unnecessary memory space.*/
+  // TRY WITH FSTREAM
+// fstream MyFile("filename1.txt");
+
+  // Write to the file
+// MyFile << "Files can be tricky, but it is fun enough!";
+
+  // Close the file
+  // MyFile.close();
+
+  // Create a text string, which is used to output the text file
+string myText;
+
+/
     return 0;
 }
