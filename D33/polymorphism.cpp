@@ -42,5 +42,5 @@ int main(){
   Pig peppa;
   peppa.animalSound();
   /*C'est Fini*/
-
+  return 0;
 }
