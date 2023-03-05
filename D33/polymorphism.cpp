@@ -28,3 +28,11 @@ class Dog : public Animal {
     cout << "Dogs Bark\n" ;
   }
 };
+
+int main(){
+  Dog candy;
+  candy.animalSound();
+  Pig peppa;
+  peppa.animalSound();
+  
+}
