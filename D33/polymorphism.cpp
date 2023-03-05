@@ -10,23 +10,30 @@ For example, think of a base class called Animal that has a method called animal
 // Base class
 class Animal {
   public:
-    void animalSound() {
-    cout << "The animal makes a sound \n" ;
-  }
+    void animalSound(){
+      cout << "The animal makes a sound \n";}
+    void animalLocomote(){
+      cout << "Animals move";
+    }
 };
 // Derived class
 class Pig : public Animal {
   public:
     void animalSound() {
-    cout << "Pigs oink\n" ;
-  }
+    cout << "Pigs oink\n";}
+    void animalLocomote() {
+      cout << "Pigs move on leg";
+    }
 };
 // Derived class
 class Dog : public Animal {
   public:
-    void animalSound() {
+  void animalSound() {
     cout << "Dogs Bark\n" ;
   }
+      void animalLocomote() {
+        cout <<"Pigs move on legs";
+      }
 };
 
 int main(){
@@ -34,5 +41,5 @@ int main(){
   candy.animalSound();
   Pig peppa;
   peppa.animalSound();
-  
+
 }
