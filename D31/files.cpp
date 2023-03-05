@@ -17,7 +17,7 @@ int main(){
     /*write a c++ program file*/
     ofstream cplus("1.cpp");
     cplus << "#include <iostream>\n#include <fstream>\nusing namespace std;\n\nint main() {"
-    <<"ofstream new(\"new.txt\");\nnew << \"i did it\"; \nnew.close();\nreturn;}";
+    <<"\nofstream new1(\"new.txt\");\nnew1 << \"i did it\"; \nnew1.close();\nreturn;\n}";
     cplus.close();
 
 }

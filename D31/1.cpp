@@ -2,7 +2,9 @@
 #include <fstream>
 using namespace std;
 
-int main() {ofstream new("new.txt");
-new << "i did it"; 
-new.close();
-return;}
+int main() {
+ofstream new1("new.txt");
+new1 << "i did it"; 
+new1.close();
+return;
+}
