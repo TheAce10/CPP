@@ -19,5 +19,6 @@ int main(){
     cplus << "#include <iostream>\n#include <fstream>\nusing namespace std;\n\nint main() {"
     <<"\nofstream new1(\"new.txt\");\nnew1 << \"i did it\"; \nnew1.close();\nreturn 0;\n}";
     cplus.close();
+    /*a program that creates another program*/
 
 }
