@@ -14,3 +14,10 @@ class Animal {
     cout << "The animal makes a sound \n" ;
   }
 };
+// Derived class
+class Pig : public Animal {
+  public:
+    void animalSound() {
+    cout << "The pig says: wee wee \n" ;
+  }
+};
