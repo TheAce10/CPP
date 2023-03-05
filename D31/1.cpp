@@ -6,5 +6,5 @@ int main() {
 ofstream new1("new.txt");
 new1 << "i did it"; 
 new1.close();
-return;
+return 0;
 }
