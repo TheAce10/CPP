@@ -12,6 +12,10 @@ int main(){
         cout << text.length();
         cout << "\n";
     }
-    prog.close();
+    prog1.close();
+
+    /*write a c++ program file*/
+    ofstream cplus("1.cpp");
+    
 
 }
