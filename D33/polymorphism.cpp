@@ -21,3 +21,10 @@ class Pig : public Animal {
     cout << "The pig says: wee wee \n" ;
   }
 };
+// Derived class
+class Dog : public Animal {
+  public:
+    void animalSound() {
+    cout << "The dog says: bow wow \n" ;
+  }
+};
