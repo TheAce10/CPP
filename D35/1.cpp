@@ -12,11 +12,13 @@ In the example below, the Car class (child) inherits the attributes and methods 
 Example*/
 class vehicle {
     protected:
+    static int asdf= 12345;
     unsigned long int number;
-    static string manufacturer;
+    
     private:
     int x;
     public:
+    string manufacturer;
     int y;
 };
 
@@ -28,6 +30,7 @@ class Car: public vehicle {
 
     public:
     Car(){model= "Null";}
+
     void setModel(string valx){
         model = valx;
     }
@@ -58,6 +61,11 @@ In this example, sportsCar is derived from class Car (which is derived from vehi
 };
 
 int main(){
-    sportsCar n1;
-    
+    sportsCar n1; float b;
+    cin >> n1.manufacturer;
+    string a;
+    cin >> a;
+    n1.setModel(a);
+    cin >> b;
+    n1.setSpeed(b);
 }
