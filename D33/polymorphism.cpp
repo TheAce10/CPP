@@ -18,13 +18,13 @@ class Animal {
 class Pig : public Animal {
   public:
     void animalSound() {
-    cout << "The pig says: wee wee \n" ;
+    cout << "Pigs oink\n" ;
   }
 };
 // Derived class
 class Dog : public Animal {
   public:
     void animalSound() {
-    cout << "The dog says: bow wow \n" ;
+    cout << "Dogs Bark\n" ;
   }
 };

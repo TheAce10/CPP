@@ -12,7 +12,7 @@ In the example below, the Car class (child) inherits the attributes and methods 
 Example*/
 class vehicle {
     protected:
-    static int asdf= 12345;
+    int asdf= 12345;
     unsigned long int number;
     
     private:
