@@ -6,3 +6,7 @@ class player {
     char gender;
     string name;
 
+    public:
+    void setGender(char), setAge(int), setName(string);
+    
+};
