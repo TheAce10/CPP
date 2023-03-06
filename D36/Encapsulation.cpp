@@ -16,4 +16,8 @@ class Employee {
     // Private attribute
     int salary;
 
-  
+  public:
+    // Setter
+    void setSalary(int s) {
+      salary = s;
+    }
