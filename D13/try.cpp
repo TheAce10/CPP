@@ -17,5 +17,7 @@ int main() {
         
     }
     
-
+do {
+true
+}while(true);
 }
