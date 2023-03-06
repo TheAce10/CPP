@@ -14,3 +14,6 @@ class player {
 void player::setGender(char a){
     gender= a;
 }
+void player::setAge(int a){
+    age= a;
+}
