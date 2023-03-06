@@ -10,3 +10,7 @@ class player {
     void setGender(char), setAge(int), setName(string);
     
 };
+
+void player::setGender(char a){
+    gender= a;
+}
