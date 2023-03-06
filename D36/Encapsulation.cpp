@@ -11,3 +11,9 @@ To access a private attribute, use public "get" and "set" methods:
 Example*/
 
 
+class Employee {
+  private:
+    // Private attribute
+    int salary;
+
+  
