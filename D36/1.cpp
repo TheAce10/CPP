@@ -17,3 +17,6 @@ void player::setGender(char a){
 void player::setAge(int a){
     age= a;
 }
+void player::setName(string a){
+    name= a;
+}
