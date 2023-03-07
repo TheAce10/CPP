@@ -11,7 +11,13 @@ In the example below, the Car class (child) inherits the attributes and methods 
 
 Example*/
 class vehicle {
-    
+    protected:
+    unsigned long int number;
+    static string manufacturer;
+    private:
+    int x;
+    public:
+    int y;
 };
 
 class Car: public vehicle {
