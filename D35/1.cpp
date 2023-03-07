@@ -26,7 +26,17 @@ class Car: public vehicle {
     protected:
     string model;
 
-    
+    public:
+    Car(){model= "Null";}
+    void setModel(string valx){
+        model = valx;
+    }
+    string getModel(){
+        return model;
+    }
+    /*Why And When To Use "Inheritance"?
+- It is useful for code reusability: reuse attributes and methods of an existing class when you create a new class.*/
+    };
 
 // Multilevel inheritance
 class sportsCar : public Car{
