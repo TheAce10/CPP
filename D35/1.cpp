@@ -16,3 +16,8 @@ class vehicle {
     int y;
 };
 
+class Car: public vehicle {
+    int xx;
+    public:
+    int yy;
+    };
