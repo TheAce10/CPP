@@ -26,3 +26,9 @@ class Car: public vehicle {
 
 // Multilevel inheritance
 class sportsCar : public Car{
+    /*Multilevel Inheritance
+A class can also be derived from one class, which is already derived from another class.
+
+In this example, sportsCar is derived from class Car (which is derived from vehicle).*/
+    int xxx;
+};
