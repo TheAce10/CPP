@@ -11,18 +11,16 @@ In the example below, the Car class (child) inherits the attributes and methods 
 
 Example*/
 class vehicle {
-    int x;
-    public:
-    int y;
+    
 };
 
 class Car: public vehicle {
+    private:
     int xx;
-    public:
-    int yy;
-    /*Why And When To Use "Inheritance"?
-- It is useful for code reusability: reuse attributes and methods of an existing class when you create a new class.*/
-    };
+    protected:
+    string model;
+
+    
 
 // Multilevel inheritance
 class sportsCar : public Car{
@@ -30,5 +28,10 @@ class sportsCar : public Car{
 A class can also be derived from one class, which is already derived from another class.
 
 In this example, sportsCar is derived from class Car (which is derived from vehicle).*/
-    int xxx;
+   
 };
+
+int main(){
+    sportsCar n1;
+    
+}
