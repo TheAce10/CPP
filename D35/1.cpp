@@ -44,7 +44,17 @@ class sportsCar : public Car{
 A class can also be derived from one class, which is already derived from another class.
 
 In this example, sportsCar is derived from class Car (which is derived from vehicle).*/
-   
+    float speed;
+    public:
+    sportsCar(){
+        speed= 0.00;
+    }
+     void setSpeed(float valx){
+        speed = valx;
+    }
+    float getSpeed(){
+        return speed;
+    }
 };
 
 int main(){
