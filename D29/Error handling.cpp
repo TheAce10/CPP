@@ -14,12 +14,24 @@ The catch statement allows you to define a block of code to be executed, if an e
 
 The try and catch keywords come in pairs:
 
-Example*/
+Example
 try {
   // Block of code to try
   throw exception; // Throw an exception when a problem arise
 }
 catch () {
   // Block of code to handle errors
+}*/
+try {
+  int age = 15;
+  if (age >= 18) {
+    cout << "Access granted - you are old enough.";
+  } else {
+    throw (age);
+  }
+}
+catch (int myNum) {
+  cout << "Access denied - You must be at least 18 years old.\n";
+  cout << "Age is: " << myNum;
 }
 }
