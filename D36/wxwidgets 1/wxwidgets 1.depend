@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1679069278 source:c:\users\bless\documents\cpp\d36\wxwidgets 1\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<conio.h>
+	<vector>
+
