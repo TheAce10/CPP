@@ -16,7 +16,7 @@ private:
 protected:
 public:
     void createProfile(string name){
-        ofstream file("player.text");
+        ofstream file("player.txt");
         file << "Player 1\n name: "<<name<<"\nage: "<<age << "\nProgress: " << progress;
         file.close();}
     void getProfile(string& s){

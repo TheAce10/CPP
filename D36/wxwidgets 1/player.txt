@@ -1,4 +1,6 @@
-Player 1
- name: Bless
- age: 19
-Progress: 0
+Name: John123
+Age: 19
+Gender: m
+Name: Edward606
+Age: 20
+Gender: m

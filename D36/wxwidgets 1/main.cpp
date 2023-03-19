@@ -2,6 +2,8 @@
 #include <fstream>
 #include <string>
 #include <conio.h>
+#include <cstdlib>
+#include <string.h>
 //#include <vector>
 
 using namespace std;
@@ -10,36 +12,34 @@ using namespace std;
 
 class player {
 private:
-    string name;
-    int age;char gender;
-    int progress[];
+    string name,tempS,age, gender,s,level;
+    char playerChoice[5];
 protected:
 public:
-    void createProfile(string name){
-        ofstream file("player.text");
-        file << "Player 1\n name: "<<name<<"\nage: "<<age << "\nProgress: " << progress;
-        file.close();}
-    void getProfile(string& s){
+    player(){
+    name= "";age="";gender="",s="",level="";}
+    void setPlayerInfo(string a,string b,string c){
+    name= a;
+    age= b;
+    gender= c;}
+    void createProfile(){
         ifstream file("player.txt");
-        getline(file, s);
-        file.close();}
-    void setPlayerInfo(){
-        cout << "Player age:\t";
-    cin >> age;
-    cout << "\nPlayer gender:\t";
-    cin >>gender;}
-    void saveProgress(int i,int a){
-        progress[i]= a;
-    }
-};
+        while (getline(file, tempS)) {
+            s+= tempS+"\n";
+        }
+        file.close();
+        ofstream file1("player.txt");
+        s+="Name: "+name+"\nAge: "+age+"\nGender: "+gender+"\nLevel: "+level+"\n";
+        file1 << s;
+        file1.close();}
 
+};
 class character {
     private:
     int rank;
     public:
     int ge;
 };
-
 class stage {
     private:
     string choice1;
@@ -71,43 +71,86 @@ class stage {
         }
     }
 };
-
-class game{
+class story {
+private:
+    string str;
+    string path;
 public:
-    void loadplayer(){};
-    void saveplayer (){};
+    void selectStory(string w){
+
+    }
+};
+class game{
+private:
+    string tempS,ls;
+public:
+    //Create player profile text file
+    void profiles(){
+        ofstream file("profile.txt");
+        file.close();}
+    void loadplayer(string& s){
+        int i=0;
+        ifstream file("player.txt");
+        while (getline(file, tempS)) {
+            if (i%4==0){
+            ls+= tempS+"\n";}
+            i++;
+        }
+    };
+    void getProfile(string& s){
+        ifstream file("player.txt");
+        getline(file, s);
+        file.close();}
     void getProgress(){};
-    //void createNewplayer(){};
     void deleteProfile(){};
+    void recordChoice(){
+    }
 };
 
-class Ace:public game,stage,character{};
 
-int main()
-{
+//class Ace:public game, stage, character{};
+
+int main(){
+// standard commands
+
+/*primary library for input output processing*/
+
+    /*main area for code execution*/
+    /*string name;
+    cout << "Enter name:\t";
+    cin >> name;
+
+    ofstream nfile(name+".txt");
+    nfile << "PLAYER\n";
+    nfile.close();
+*/
+    //print to console
+
+    /*Documentary*/
+
+    // inline comments
+
+    // Thats all for today
+
     string name,data;
-        cout << "DETECTIVE ACE!\t" << endl;
-    //cout << "Welcome"<<" Hello Enter your name!\t" << endl;
-    //cin >> name;
-    //player a;
-    //a.setPlayerInfo();
-    //a.createProfile(name);
-    // a.getProfile(data);
+    cout << "DETECTIVE ACE!\t" << endl;
 
+    game Ace;
+    Ace.profiles();
     stage A;
     A.setChoice(0, "ONCE UPON A TIME .........");
-    A.setChoice(1, "thererrvzfvfjvndfnvs\n");
-    A.setChoice(2, "hhbhbhbfbbbjhbjfdbfv\n");
+    A.setChoice(1, "11111111rvzfvfjvndfnvs\n");
+    A.setChoice(2, "22222222bbbjhbjfdbfv\n");
 
     stage B;
     B.setChoice(0, "ONCE UPON A TIME .........");
-    B.setChoice(1, "thererrvzfvfjvndfnvs\n");
-    B.setChoice(2, "hhbhbhbfbbbjhbjfdbfv\n");
+    B.setChoice(1, "3333333vzfvfjvndfnvs\n");
+    B.setChoice(2, "444444444fbbbjhbjfdbfv\n");
 
     stage C;
     C.setChoice(0, "ONCE UPON A TIME .........");
-    C.setChoice(1, "thererrvzfvfjvndfnvs\n");
-    C.setChoice(2, "hhbhbhbfbbbjhbjfdbfv\n");
+    C.setChoice(1, "55555555zfvfjvndfnvs\n");
+    C.setChoice(2, "66666666bbbjhbjfdbfv\n");
 
     stage D;
     D.setChoice(0, "ONCE UPON A TIME .........");
@@ -119,16 +162,24 @@ int main()
     E.setChoice(1, "thererrvzfvfjvndfnvs\n");
     E.setChoice(2, "hhbhbhbfbbbjhbjfdbfv\n");
 
-    char ccc;int conv;
-    vector<int> mno;
-    //char stg[5]= {'A','B','C','D','E'};
-    while (true){
+    string age, gender;
+    cout << "Welcome"<<" Hello Enter Your Info To Setup Profile\nUsername:\t" << endl;
+    getline(cin,name);
+    cout << "\nAge:\t";
+    cin >> age;
+    cout << "\nGender(m/f)\t";
+    gender= getch();
+    player a;
+    a.setPlayerInfo(name,age,gender);
+    a.createProfile();
+
+    int nnn[5]= {};
         for (int i=0;i<5;i++){
             switch(i){
                 case 0:
                 A.display(1);
                 A.display(2);
-                getch();
+                //getch();
                 break;
                 case 1:
                 B.display(1);
@@ -148,11 +199,18 @@ int main()
                 break;
             }
             cout << "Select your choice\n";
-            ccc=getch();
-            conv=ccc;
-            mno.push_back(conv);
+            nnn[i]=getch();
+            char command[50];
+            strcpy(command, "cls");
+            system(command);
+            if (nnn[i]=='1' || nnn[i]=='2'){
+                Ace.recordChoice();
+            }
+            else {
 
-    }
+            cout <<"Invalid input, TRY AGAIN"<< endl;
+                i--;
+            }
     }
 
     /*
@@ -172,7 +230,5 @@ int main()
             continue;
         }
     } */
-
-
-    return 0;
+    return 0; //return command
 }

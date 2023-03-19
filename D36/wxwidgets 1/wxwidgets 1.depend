@@ -1,8 +1,19 @@
 # depslib dependency file v1.0
-1679069278 source:c:\users\bless\documents\cpp\d36\wxwidgets 1\main.cpp
+1679200526 source:c:\users\bless\documents\cpp\d36\wxwidgets 1\main.cpp
 	<iostream>
 	<fstream>
 	<string>
 	<conio.h>
-	<vector>
+	<cstdlib>
+	<string.h>
+
+1679156541 source:c:\users\bless\documents\cpp\d36\wxwidgets 1\try.c
+
+1679159091 source:c:\users\bless\documents\cpp\d36\wxwidgets 1\try.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<conio.h>
+	<cstdlib>
+	<string.h>
 
