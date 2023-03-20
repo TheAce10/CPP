@@ -7,7 +7,7 @@
 
 using namespace std;
 
-class player {
+/*class player {
 private:
     string name,tempS,age, gender, s;
 protected:
@@ -43,4 +43,46 @@ int main(){
     a.setPlayerInfo(name,age,gender);
     a.createProfile();
 
+}*/
+
+class storyNode {
+    public:
+    // int id;
+    string data;
+    storyNode* c1= NULL;
+    storyNode* c2= NULL;
+    storyNode(string a) : data(a){}
+    storyNode(string a, storyNode* left,storyNode* right) : data(a),c1(left),c2(right){}
+    
+    void insertNode(storyNode *node,int a){
+        if(a==1){
+            c1=node;
+        }
+        else if(a==2){
+            c2=node;
+        }
+    };
+
+};
+
+class storyTree {
+    storyNode *root;
+    storyNode* c1;
+    storyNode* c2;
+public:
+    storyTree(storyNode* r): c1(NULL),c2(NULL){}
+};
+
+
+void createNode(string b){
+    storyNode* node= NULL;
+        // node->id= a;
+        node->data= b;
+        node->c1= NULL;
+        node->c2= NULL;
 }
+
+int main(){
+    
+}
+
