@@ -61,3 +61,10 @@ public:
         right = nullptr;
     }
 };
+
+class outcomeTree {
+public:
+    outcomeNode* root;
+    outcomeTree(string rootData) {
+        root = new outcomeNode(rootData);
+    }
