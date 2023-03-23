@@ -82,7 +82,46 @@ void createNode(string b){
         node->c2= NULL;
 }
 
+class Node {
+    string data;
+    Node *left;
+    Node *right;
+    public:
+    Node(string s):data(s), left(nullptr), right(nullptr){}
+    ~Node(){}
+    string getData(){
+        return this->data;
+    }
+
+};
+class BinTree {
+    Node root;
+    // Node *left;
+    // Node *right;
+    public:
+
+    void setLeft(Node* l){
+        this->left= l;
+    }
+
+    void setRight(Node* r){
+        this->right= r;
+    }
+
+    Node* getLeft(){
+        return this->left;
+    }
+
+    Node* getRight(){
+        return this->right;
+    }
+};
+
 int main(){
-    
+    Node story("1");
+    Node* story1[7];
+    for(int i=0;i<7;i++){
+        
+    }
 }
 

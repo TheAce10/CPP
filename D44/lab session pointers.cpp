@@ -2,16 +2,19 @@
 
 using namespace std;
 
-void aba(int* ,int n){
+void aba(int* ,int size, int *max,int *min){
     nullptr;
 }
+
+
 
 int main(){
     int c[]={1,2,3,4,5};
     int len= sizeof(c)/sizeof(c[0]);
-    aba(c,len);
+    // aba(c,len);
 
-    void* pnt= &c;
+int min= c[0];
+get(&min)
 
     // min
     int min= c[0];
