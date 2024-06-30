@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1705927137 source:d:\ace123\studies\cpp\klogotestprep\main.cpp
+	<iostream>
+
+1705927218 source:d:\ace123\studies\cpp\klogotestprep\chatgpt.cpp
+	<iostream>
+
